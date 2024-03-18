@@ -13,7 +13,7 @@ export default function PlayScreen() {
   const [loading, setLoading] = useState(false);
 
   const { create: createCollection } = useCollection();
-  const { time, start: startTimer } = useTimer(10);
+  const { time, start: startTimer } = useTimer();
   const { submitScore } = useScoreboard();
   const { name } = useUser();
   const navigate = useNavigate();
