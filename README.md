@@ -4,6 +4,7 @@
 
 This is a simple frontend assignment for VakantieDiscounter. The assignment is to create a simple game that displays a list of cats, dogs and foxes. The user should click on the foxes to score points. If the user clicks on other animals, a point will be deducted. The game should have a timer and a score counter.
 
+[SEE LIVE DEMO](https://fox-game-vd.netlify.app/)
 ## Technologies
 
 - React
