@@ -3,6 +3,7 @@ import UserContext from "@/context/UserContext";
 import PlayScreen from "@/pages/Play";
 import ScoreboardScreen from "@/pages/Scoreboard";
 import WelcomeScreen from "@/pages/Welcome";
+import NotFound from "@/pages/NotFound";
 import { Typography } from "@material-tailwind/react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
@@ -23,6 +24,7 @@ export default function App() {
                 <Route path="/" element={<WelcomeScreen />} />
                 <Route path="/play" element={<PlayScreen />} />
                 <Route path="/scoreboard" element={<ScoreboardScreen />} />
+                <Route path="*" element={<NotFound />} />
               </Routes>
             </Card>
           </div>
