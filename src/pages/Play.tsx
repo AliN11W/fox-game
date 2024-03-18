@@ -43,8 +43,6 @@ export default function PlayScreen() {
   }, [time]);
 
   const handleItemClick = (item: CollectionItemType) => {
-    if (time === 0) return;
-
     setScore(score + (item.type === "fox" ? 1 : -1));
     setActiveCollection(activeCollection + 1);
     loadNextCollection();
