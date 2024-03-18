@@ -1,4 +1,4 @@
-# FOX Game! 🦊 | Frontend Assignment
+# FOX Game! 🦊
 
 ## Introduction
 
