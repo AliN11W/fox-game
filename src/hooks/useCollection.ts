@@ -34,7 +34,7 @@ export default function useCollection() {
     // and waiting for the images to load
     const resolvedCollection = collection.map((item) => {
       return new Promise<CollectionItemType>((resolve) => {
-        item.url().then((url: string) => {
+        item.url().then((url) => {
           const resolvedItem = {
             url: url,
             type: item.type,
