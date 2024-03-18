@@ -1,4 +1,4 @@
-# VakantieDiscounter Frontend Assignment
+# FOX Game! 🦊 | Frontend Assignment
 
 ## Introduction
 
