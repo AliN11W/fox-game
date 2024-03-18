@@ -1,7 +1,7 @@
+import { useNavigate } from "react-router-dom";
+import { Button } from "@material-tailwind/react";
 import NameForm from "@/components/NameForm";
 import useUser from "@/hooks/useUser";
-import { Button } from "@material-tailwind/react";
-import { useNavigate } from "react-router-dom";
 
 export default function WelcomeScreen() {
   const navigate = useNavigate();

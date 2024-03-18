@@ -1,10 +1,10 @@
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import PhotoGrid from "@/components/PhotoGrid";
 import useCollection, { CollectionItemType } from "@/hooks/useCollection";
 import useScoreboard from "@/hooks/useScoreboard";
 import useTimer from "@/hooks/useTimer";
 import useUser from "@/hooks/useUser";
-import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 export default function PlayScreen() {
   const [collections, setCollections] = useState<CollectionItemType[][]>([]);

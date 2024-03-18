@@ -1,4 +1,4 @@
-import getDog, { getCat, getFox } from "@/api/animals";
+import { getDog, getCat, getFox } from "@/api/animals";
 
 export type CollectionItemType = {
   url: string;

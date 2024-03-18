@@ -1,6 +1,6 @@
 import { CAT_API_URL, DOG_API_URL, FOX_API_URL } from "@/constants";
 
-export default async function getDog() {
+export async function getDog() {
   try {
     const response = await fetch(DOG_API_URL);
     if (!response.ok) {

@@ -1,5 +1,5 @@
-import { GAME_DURATION } from "@/constants";
 import { useEffect, useRef, useState } from "react";
+import { GAME_DURATION } from "@/constants";
 
 export default function useTimer(initialTime = GAME_DURATION) {
   const [time, setTime] = useState(initialTime);

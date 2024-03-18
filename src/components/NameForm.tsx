@@ -1,6 +1,6 @@
-import useUser from "@/hooks/useUser";
-import { Button, Input } from "@material-tailwind/react";
 import { useEffect, useState } from "react";
+import { Button, Input } from "@material-tailwind/react";
+import useUser from "@/hooks/useUser";
 
 export default function NameForm() {
   const [editMode, setEditMode] = useState(false);

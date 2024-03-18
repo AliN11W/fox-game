@@ -1,8 +1,8 @@
+import { useEffect, useState } from "react";
 import StyledLink from "@/components/StyledLink";
 import useScoreboard from "@/hooks/useScoreboard";
 import formatDate from "@/lib/date";
 import { Score } from "@/hooks/useScoreboard";
-import { useEffect, useState } from "react";
 
 export default function ScoreboardScreen() {
   const [sortedRecords, setSortedRecords] = useState<Score[]>([]);

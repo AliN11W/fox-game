@@ -1,11 +1,11 @@
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Typography } from "@material-tailwind/react";
 import Card from "@/components/Card";
 import UserContext from "@/context/UserContext";
 import PlayScreen from "@/pages/Play";
 import ScoreboardScreen from "@/pages/Scoreboard";
 import WelcomeScreen from "@/pages/Welcome";
 import NotFound from "@/pages/NotFound";
-import { Typography } from "@material-tailwind/react";
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 export default function App() {
   return (
