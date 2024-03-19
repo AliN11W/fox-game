@@ -5,6 +5,7 @@ import useCollection, { CollectionItemType } from "@/hooks/useCollection";
 import useScoreboard from "@/hooks/useScoreboard";
 import useTimer from "@/hooks/useTimer";
 import useUser from "@/hooks/useUser";
+import { GAME_COLLECTION_SIZE } from "@/constants";
 
 export default function PlayScreen() {
   const [collections, setCollections] = useState<CollectionItemType[][]>([]);
@@ -25,7 +26,7 @@ export default function PlayScreen() {
     }
 
     setLoading(true);
-    createCollection().then((collection) => {
+    createCollection(GAME_COLLECTION_SIZE).then((collection) => {
       setLoading(false);
       startTimer();
       setCollections([collection]);
@@ -49,7 +50,7 @@ export default function PlayScreen() {
   };
 
   const loadNextCollection = () => {
-    createCollection().then((collection) => {
+    createCollection(GAME_COLLECTION_SIZE).then((collection) => {
       setCollections((prev) => [...prev, collection]);
     });
   };

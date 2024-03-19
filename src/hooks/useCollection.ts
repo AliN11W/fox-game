@@ -6,14 +6,14 @@ export type CollectionItemType = {
 };
 
 export default function useCollection() {
-  const create = async () => {
+  const create = async (amount: number) => {
     const collection: {
       url: () => Promise<string>;
       type: CollectionItemType["type"];
     }[] = [];
 
     // Create 8 random items of animals except fox
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < amount - 1; i++) {
       const type = Math.random() > 0.5 ? "cat" : "dog";
       const getUrl = type === "cat" ? getCat : getDog;
 
