@@ -12,7 +12,7 @@ export default function useCollection() {
       type: CollectionItemType["type"];
     }[] = [];
 
-    // Create 8 random items of animals except fox
+    // Create [#amount - 1] random items of animals except fox
     for (let i = 0; i < amount - 1; i++) {
       const type = Math.random() > 0.5 ? "cat" : "dog";
       const getUrl = type === "cat" ? getCat : getDog;
